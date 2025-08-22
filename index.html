@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Temperature</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Location Temperature</h1>
+        <div>
+            <label for="location">Choose a location:</label>
+            <select id="location" onchange="displayTemperature()">
+                <option value="">Select a location</option>
+                <option value="new-york">New York</option>
+                <option value="los-angeles">Los Angeles</option>
+                <option value="chicago">Chicago</option>
+                <option value="houston">Houston</option>
+                <option value="miami">Miami</option>
+            </select>
+        </div>
+        <div id="temperature"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
